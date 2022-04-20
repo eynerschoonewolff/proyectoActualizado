@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- navegador -->
+
+    <div class="col-lg-12 text-center bg-light">
+        <img src="../img/cabezera.png" class="img-fluid w-25">
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <div class="container-fluid">
+            <img src="../img/logo_colegio.png" alt="" class="col-sm-2 col-lg-2 col-3 navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="registro.html">Registro</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- inicio de container-->
+    <div class="container font-weight-bold">
+        <div class="row">
+            <!-- iformacion -->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-lg-12 my-auto px-5">
+                <p class="">
+                    Hola, bienvenido. Nos alegra que estés aquí. Tu salud física y mental son importantes. No te sientas
+                    apenado por tus conflictos o problemas, recuerda que pedir ayuda no es un signo de debilidad, sino
+                    de fortaleza. Puedes solicitar una cita con alguno de nuestros psicólogos o participar en nuestro
+                    foro de estudiantes. Esperamos que tengas una experiencia agradable en nuestra pagina, ten un buen
+                    día.
+                </p>
+            </div>
+            <!-- inicio de session -->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-lg-12 my-5 p-2 ">
+                <div class="my-2 p-3" style="max-width: 40rem;">
+                    <div class="card-header ">
+                        <h1 class="text-center m-3">Inicio de sesión</h1>
+                        <div class="card-body text-dark">
+
+                            <form action="../database/login.php" method="POST" class="px-5">
+                                <div>
+                                    <label class="mb-2" for="email">Correo</label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Correo electronico" required>
+                                </div>
+                                <div>
+                                    <label class="mb-2" for="passw">Password</label>
+                                    <input type="password" class="form-control" name="passw" id="passw"
+                                        placeholder="Contraseña" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary mt-3">Iniciar sesión</button>
+                                </div>
+                            </form>
+
+                            <div class="mt-4 text-center">
+                                <a href="html/registro_usuario.html" class="text-decoration-none">¿No tienes cuenta?
+                                    Puedes registrarte a través de este enlace llenando el formulario de
+                                    inscripción.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="text-center text-white bg-light mt-5">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3 bg-light">
+            © 2020 Copyright:
+            <a class="text-dark" href="#">ITSA</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

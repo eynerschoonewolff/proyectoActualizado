@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+  <div class="col-lg-12 text-center bg-light">
+    <img src="../img/cabezera.png" class="img-fluid w-25">
+  </div>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+    <div class="container-fluid">
+      <img src="../img/logo_colegio.png" alt="" class="col-sm-2 col-lg-2 col-3 navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="registro.html">Registro</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <div class="col-lg-12 text-center px-5">
+      <p class="fs-3">Registro</p>
+      <p class="px-5">Bienvenido a nuestro formulario de registro para estudiantes. En este podrás crear tu cuenta
+        usando tu correo electrónico. Si tienes alguna duda comunicate con nosotros a través de la pestaña de contacto o
+        nuestro correo electrónico example.@gmail.com.</p>
+    </div>
+
+    <form action="../database/registro.php" method="POST" class="row g-3 needs-validation mt-3 mx-5"
+      id="formularioRegistro">
+
+      <div class="col-md-3">
+        <label for="nombres" class="form-label">Nombre(s)</label>
+        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Edwin David" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="Apellidos" class="form-label">Apellido(s)</label>
+        <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="Conrado Dieppa" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="nidentificacion" class="form-label">Número de identificación</label>
+        <input type="text" class="form-control" id="nidentificacion" name="nidentificacion" placeholder="1111111111"
+          maxlength="10" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="inputFecha" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="inputFecha" name="inputFecha" placeholder="dd-mm-yyyy" value=""
+          min="1997-01-01" max="2030-12-31" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="Correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="Correo" name="Correo" placeholder="edwin@gmail.com" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="Contraseña" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="curso" class="form-label">Curso</label>
+        <select class="form-select" id="curso" name="curso" required>
+          <option selected disabled value="">Seleccione su curso</option>
+          <option value="11 - A">11 - A</option>
+          <option value="11 - B">11 - B</option>
+          <option value="11 - C">11 - C</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto la politica de privacidad
+          </label>
+          <div class="invalid-feedback">
+            Debe aceptar los términos y condiciones de privacidad antes de enviar.
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-success me-md-2" type="submit" name="register">Registrate</button>
+        <button class="btn btn-primary" type="reset">Limpiar Datos</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="text-center text-white bg-light mt-5">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3 bg-light">
+      © 2020 Copyright:
+      <a class="text-dark" href="#">ITSA</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>
